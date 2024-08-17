@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="dashboard">
+                <div class="navhead">
+                    <img class="nav-img1" src="assets/grain.svg" alt="">
+                    <h3>E-Dashboard</h3>
+                    <img class="nav-img2" src="assets/menu_open.svg" alt="">
+                </div>
+
+                <div class="login-name">
+                    <div class="icon">
+                        A
+                    </div>
+                    <p>Alphalinx inc. <select name="" id=""></select></p>
+                </div>
+
+                 <div class="nav-items">
+                <ul>
+                    <li><img src="assets/widgets.svg" alt=""><p>Dashboard</p></li>
+                    <li><img src="assets/add_chart.svg" alt=""><p>My Business <select name="" id=""></select></p></li>
+                    <li><img src="assets/request_quote.svg" alt=""><p>Financial Resources <select name="" id=""></select></p></li>
+                    <li><img src="assets/unsubscribe.svg" alt=""><p>Mailbox</p></li>
+                    <li><img src="assets/airplane_ticket.svg" alt=""><p>Visa Center</p></li>
+                    <li><img src="assets/quiz.svg" alt=""><p>Compliance</p></li>
+                </ul>
+            </div>
+            <div class="navfooter">
+                <ul>
+                    <li><img src="assets/notifications.svg" alt=""><p>Notifications</p></li>
+                    <li><img src="assets/help.svg" alt=""><p>Help Center</p><img src="assets/more_vert.svg" alt=""></li>
+                    <li><div class="icon">J</div><div class="login-info"><p>Jacobe James</p><p>jacobejames@gmail.com</p></div><img src="assets/more_vert.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mobile-navhead">
+                <img class="mnav-img1" src="assets/grain.svg" alt="">
+                <h3>E-Dashboard</h3>
+                <img class="mnav-img2" src="assets/menu_open.svg" alt="">
+            </div>
+            <div class="welcome-tag">
+                <h1>Good morning,Emily! 👋</h1>
+                <p>Welcome back;</p>
+            </div>
+            <div class="cards">
+                <div class="card-1">
+                    <img src="assets/doc1.svg" alt="">
+                </div>
+                <div class="card-2">
+                    <div class="chart">
+                        <canvas class="view-chart">
+                          
+                        </canvas>
+                    </div>
+                    <div class="chart-info">
+                        <ul>
+                            <li class="item1">Incomplete</li>
+                            <li class="item2">Pending Approval</li>
+                            <li class="item3">Approved</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mailbox">
+                <p class="para-1">Mailbox <a href="#">View all</a></p>
+                <p class="para-2">Check on your mail in one go</p>
+                <div class="icons-actions">
+                    <div class="icons-action">
+                    <img src="assets/Group 764328.svg" alt="">
+                    <p>New</p>
+                    <p class="icon-num">23</p>
+                </div>
+    
+                <div class="icons-action">
+                    <img src="assets/Group 764329.svg" alt="">
+                    <p>Requested</p>
+                    <p class="icon-num">23</p>
+                </div>
+    
+                <div class="icons-action">
+                    <img src="assets/Group 764331.svg" alt="">
+                    <p>Actions taken</p>
+                    <p class="icon-num">23</p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="legal-compliance">
+                    <p class="para-1">Legal Compliance <a href="#">View all</a></p>
+                    <p class="para-2">Keep your requirements upto date</p>
+                    <div class="icons-actions">
+                        <div class="icons-action">
+                        <img src="assets/Group 764328.svg" alt="">
+                        <p>Reminders</p>
+                        <p class="icon-num">23</p>
+                    </div>
+        
+                    <div class="icons-action">
+                        <img src="assets/Group 764329.svg" alt="">
+                        <p>In Progress</p>
+                        <p class="icon-num">23</p>
+                    </div>
+        
+                    <div class="icons-action">
+                        <img src="assets/Group 764331.svg" alt="">
+                        <p>To approve</p>
+                        <p class="icon-num">23</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <p class="task-header"><span class="task-one">Tasks</span> <a href="#">View all</a></p>
+                <ul class="task-selector">
+                    <li>My tasks</li>
+                    <li>Overdue</li>
+                    <li>Assigned by me</li>
+                </ul>
+                <table class="task-desktop"> 
+                    <tr>
+                        <th>Task</th>
+                        <th>Category</th>
+                        <th>Due date</th>
+                        <th>Status</th>
+                    </tr>
+                </table>
+                <div id="tasks-container">
+               
+                </div>
+
+                <div class="history">
+                    <p  ><span class="history-head">Payment History</span> <a class="history-view" href="#" >View All</a></p>
+                    <div id="transactions-container">
+                        <table>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Date of Transaction</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="trans-table">
+                        <p><span class="trans-history">Transaction history </span><a href="">View All</a></p>
+                        <div>
+                            <div id="mobile-transactions-container">
+
+                            </div>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script>
+const centerTextPlugin = {
+  id: 'centerText',
+  afterDraw: (chart) => {
+    const width = chart.width;
+    const height = chart.height;
+    const ctx = chart.ctx;
+
+    ctx.restore();
+    const fontSize = (height / 114).toFixed(2);
+    ctx.font = fontSize + "em sans-serif";
+    ctx.textBaseline = "middle";
+
+    // Set text color to white
+    ctx.fillStyle = "#FFFFFF";
+
+    const text = "21";
+    const textX = Math.round((width - ctx.measureText(text).width) / 2);
+    const textY = height / 2;
+
+    ctx.fillText(text, textX, textY);
+    ctx.save();
+
+    // Add "applications" text below
+    const subText = "applications";
+    ctx.font = (fontSize * 0.5) + "em sans-serif";
+
+    const subTextX = Math.round((width - ctx.measureText(subText).width) / 2);
+    const subTextY = height / 2 + parseInt(fontSize, 10) * 14;
+
+    ctx.fillText(subText, subTextX, subTextY);
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.querySelector(".view-chart").getContext('2d');
+    
+    const chartData = {
+        datasets: [{
+            data: [11, 7, 4],
+            backgroundColor: [
+                '#5BB991',
+                '#F3B17D',
+                '#E77D76'
+            ],
+            borderWidth: 0
+        }]
+    };
+
+    new Chart(ctx, {
+        type: "doughnut",
+        data: chartData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    enabled: true
+                }
+            },
+            cutout: '70%',
+        },
+        plugins: [centerTextPlugin]
+    });
+});
+    </script>
+<script src="script.js"></script>
+</html>
