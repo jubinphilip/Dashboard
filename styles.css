@@ -474,6 +474,8 @@ border: 1px solid rgb(106, 105, 104);
     .mobile-navhead
     {
         display: flex;
+        width: 90%;
+        margin: 0;
     }
     .dashboard
     {
