@@ -21,6 +21,23 @@
     flex-direction: column; 
     z-index: 1;
 }
+.shownav
+{
+    background-color: #0F1738;
+     height: 100vh;
+     padding: 1vw;
+     display: flex;
+     flex-direction: column; 
+     z-index: 1;
+}
+.shownav img
+{
+    transform: rotate(180deg);
+}
+#show-nav
+{
+    display: none;
+}
 
 .navhead {
     display: flex;
