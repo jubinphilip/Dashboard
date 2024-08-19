@@ -164,7 +164,7 @@ const transactions = [
     }
 ];
 
-
+//Rendering transaction table for large screens 
 function renderTransactionRows() {
     const table = document.querySelector('#transactions-container table');
 
@@ -182,7 +182,7 @@ function renderTransactionRows() {
 }
 renderTransactionRows();
 
-//Rendering transaction table for mobil screens 
+//Rendering transaction table for Small screens 
 function renderTransactionCards() {
     const container = document.getElementById('mobile-transactions-container');
     container.innerHTML = ''; 
