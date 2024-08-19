@@ -503,7 +503,7 @@ border: 1px solid rgb(106, 105, 104);
    }
     
 }
-
+/*MEdia Query for more smaller screens*/
 @media (max-width: 800px)
 {
     table
