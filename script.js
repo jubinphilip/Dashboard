@@ -77,7 +77,7 @@ tasks.forEach(task => {
     });
     statusCell.appendChild(statusButton);
     row.appendChild(statusCell);
-
+//Putting data into the Dom
     table.appendChild(row);
 });
 //Showing task in Mobile display
