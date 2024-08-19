@@ -1,7 +1,7 @@
 const mobnav = document.querySelector('.mnav-img2');
 const dashboard = document.querySelector('.dashboard');
 const nav=document.querySelector('.nav-img2')
-
+//Code for Showing and Hiding the Dashboard
 nav.addEventListener('click', function() {
     if (dashboard.style.display === 'flex') {
       
@@ -11,6 +11,7 @@ nav.addEventListener('click', function() {
         dashboard.style.display = 'flex';
     }
 });
+//Dashboard displayig for Mobile
 mobnav.addEventListener('click', function() {
     if (dashboard.style.display === 'flex') {
       
@@ -23,6 +24,7 @@ mobnav.addEventListener('click', function() {
     }
 });
 
+//tasks is an array of objects (JSON format) which store the data for task table 
 const tasks = [
     {
         task: "Update Tax Document for Alphalinx..",
@@ -51,7 +53,7 @@ const tasks = [
 ];
 
 const table = document.querySelector("table");
-
+//Dynamically inserting data into the table in dom
 tasks.forEach(task => {
     const row = document.createElement("tr");
 
@@ -78,7 +80,7 @@ tasks.forEach(task => {
 
     table.appendChild(row);
 });
-
+//Showing task in Mobile display
 function renderTasks() {
     const container = document.getElementById('tasks-container');
     container.innerHTML = ''; 
@@ -86,7 +88,7 @@ function renderTasks() {
     tasks.forEach(task => {
         const taskDiv = document.createElement('div');
         taskDiv.className = 'task-mobile';
-
+        //Html code for showing the task data
         taskDiv.innerHTML = `
             <p>${task.task}</p>
             <div class="cat-date">
@@ -98,7 +100,7 @@ function renderTasks() {
                 <button>${task.status}</button>
             </div>
         `;
-
+        //Changing the status of request button
         const statusButton = taskDiv.querySelector("button");
         statusButton.addEventListener("click", function() {
             this.textContent = "Request Sent";
@@ -110,7 +112,7 @@ function renderTasks() {
 
 
 
-
+//if screen size <1200 then only renderTasks() method is called for Mobile 
 function checkScreenWidth() {
     if (window.innerWidth < 1200) {
         renderTasks();
@@ -121,7 +123,7 @@ checkScreenWidth();
 
 window.addEventListener('resize', checkScreenWidth);
 
-//Transaction Table
+//Transaction Table for storing 2nd table details in JSON format
 
 const transactions = [
     {
@@ -180,7 +182,7 @@ function renderTransactionRows() {
 }
 renderTransactionRows();
 
-
+//Rendering transaction table for mobil screens 
 function renderTransactionCards() {
     const container = document.getElementById('mobile-transactions-container');
     container.innerHTML = ''; 
@@ -210,7 +212,7 @@ function renderTransactionCards() {
 }
 
 renderTransactionCards();
-
+//code for showing description while clicking on the button in mobile screen
 function toggleDescription(element) {
     const description = element.closest('.mobile-history').querySelector('.history-des');
     const isVisible = description.style.display === 'block';

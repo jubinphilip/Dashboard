@@ -167,6 +167,8 @@
     </div>
 </body>
 <script>
+
+    //Code for giving text inside the chart created using chartjs
 const centerTextPlugin = {
   id: 'centerText',
   afterDraw: (chart) => {
@@ -199,7 +201,7 @@ const centerTextPlugin = {
     ctx.fillText(subText, subTextX, subTextY);
   }
 };
-
+//Chart js
 document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.querySelector(".view-chart").getContext('2d');
     

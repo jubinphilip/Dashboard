@@ -462,6 +462,8 @@ border: 1px solid rgb(106, 105, 104);
     height: fit-content;
     border-bottom: 1px solid #E5E9FF;
 }
+
+/*Changing styles while screen size is less than 1200 px*/
 @media (max-width: 1200px)
 {
   
