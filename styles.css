@@ -34,10 +34,7 @@
 {
     transform: rotate(180deg);
 }
-#show-nav
-{
-    display: none;
-}
+
 
 .navhead {
     display: flex;
@@ -483,7 +480,10 @@ border: 1px solid rgb(106, 105, 104);
 /*Changing styles while screen size is less than 1200 px*/
 @media (max-width: 1200px)
 {
-  
+    .shownav
+    {
+        display: none;
+    }
     .container
     {
         margin: 0;
