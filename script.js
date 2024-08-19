@@ -1,20 +1,13 @@
 const mobnav = document.querySelector('.mnav-img2');
 const dashboard = document.querySelector('.dashboard');
 const nav=document.querySelector('.nav-img2')
-const shownav=document.getElementById('show-nav')
-
-shownav.addEventListener('click',function()
-{
-    dashboard.style.display = 'flex';
-    shownav.style.display='none'
-})
 //Code for Showing and Hiding the Dashboard
 nav.addEventListener('click', function() {
     if (dashboard.style.display === 'flex') {
-        shownav.style.display='flex';
+      
         dashboard.style.display = 'none';
     } else {
-       shownav.style.display='none'
+       
         dashboard.style.display = 'flex';
     }
 });
