@@ -1,6 +1,19 @@
 const mobnav = document.querySelector('.mnav-img2');
 const dashboard = document.querySelector('.dashboard');
 const nav=document.querySelector('.nav-img2')
+const shownav=document.querySelector('.show-bar')
+
+
+if(window.innerWidth<=1200)
+{
+    dashboard.style.display='none';
+}
+shownav.addEventListener('click',function()
+{
+    dashboard.style.display = 'flex';
+    dashboard.style.position = 'static';
+    dashboard.style.width = '20%'; 
+})
 //Code for Showing and Hiding the Dashboard
 nav.addEventListener('click', function() {
     if (dashboard.style.display === 'flex') {
@@ -12,6 +25,7 @@ nav.addEventListener('click', function() {
     }
 });
 //Dashboard displayig for Mobile
+
 mobnav.addEventListener('click', function() {
     if (dashboard.style.display === 'flex') {
       
@@ -20,7 +34,8 @@ mobnav.addEventListener('click', function() {
     } else {
        
         dashboard.style.display = 'flex';
-        dashboard.style.width = '100%'; 
+        dashboard.style.position='absolute';
+        dashboard.style.width = '90%'; 
     }
 });
 

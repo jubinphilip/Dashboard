@@ -21,6 +21,19 @@
     flex-direction: column; 
     z-index: 1;
 }
+.showbar
+{
+    background-color: #0F1738;
+     height: 100vh;
+     padding: 1vw;
+
+     position: absolute;
+     z-index: 0;  
+}
+.show-bar
+{
+    transform: rotate(180deg);
+}
 
 .navhead {
     display: flex;
@@ -466,7 +479,10 @@ border: 1px solid rgb(106, 105, 104);
 /*Changing styles while screen size is less than 1200 px*/
 @media (max-width: 1200px)
 {
-  
+    .showbar
+    {
+        display: none;
+    }
     .container
     {
         margin: 0;
